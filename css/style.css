@@ -199,7 +199,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #64495E, #4C5F9A);
+  background-image: linear-gradient(to right, #64495E, #47555e);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -229,7 +229,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #64495E, #4C5F9A);
+  background-image: linear-gradient(to right, #64495E, #47555e);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -247,7 +247,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to left, #64495E, #4C5F9A);
+  background-image: linear-gradient(to left, #64495E, #47555e);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -405,7 +405,7 @@ body {
 .feature-box__icon {
   font-size: 6rem;
   margin-bottom: 0.5rem;
-  background-image: linear-gradient(to right, #64495E, #4C5F9A);
+  background-image: linear-gradient(to right, #64495E, #47555e);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -937,8 +937,25 @@ body {
   left: 5.5rem;
 }
 
+.header__flag-uk {
+  position: absolute;
+  top: 4rem;
+  right: 12.5rem;
+}
+
+.header__flag-france {
+  position: absolute;
+  top: 4rem;
+  right: 5.5rem;
+}
+
 .header__logo {
   height: 4rem;
+  transition: all .3s;
+}
+
+.header__flags {
+  height: 5rem;
   transition: all .3s;
 }
 
@@ -1027,7 +1044,7 @@ body {
 }
 
 .footer {
-  background-color: #4C5F9A;
+  background-color: #47555e;
   padding: 2rem 0;
   font-size: 1.4rem;
 }
@@ -1081,7 +1098,7 @@ body {
 .footer__link:link,
 .footer__link:visited {
   color: #f1f1f1;
-  background-color: #4C5F9A;
+  background-color: #47555e;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;

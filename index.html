@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="img/logo-banner.png" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="icon" href="img/terminal-256.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
@@ -16,50 +17,49 @@
 </head>
 
 <body>
-    <!-- preload -->
-    <div class="header-img">
-        <img style="display: none;" src="img/fast.gif" alt="">
-    </div>
-
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-blanc-512.png" alt="" class="header__logo">
         </div>
         <div class="header__flag-uk">
-            <img src="img/flag-uk.png" alt="" class="header__flags">
+            <button type="button" onclick='english()' class="btn-flag">
+                <img src="img/flag-uk.png" alt="" class="header__flags">
+            </button>
         </div>
         <div class="header__flag-france">
-            <img src="img/flag-france.png" alt="" class="header__flags">
+            <button type="button" onclick='french()' class="btn-flag">
+                <img src="img/flag-france.png" alt="" class="header__flags">
+            </button>
         </div>
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Lalami Mounir</span>
-                <span class="heading-primary--sub">Front-End Developer</span>
+                <span class="heading-primary--sub" id="text1">Front-End Developer</span>
             </h1>
 
-            <a href="#projects" class="btn btn--white btn--animated smooth-goto">See Projects</a>
+            <a href="#projects" class="btn btn--white btn--animated smooth-goto" id="text2">See Projects</a>
         </div>
     </header>
 
     <main>
         <section class="section-about">
             <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary" id="text3">
                     Front-End Developer based of Brussels
                 </h2>
             </div>
 
             <div class="row">
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet</h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    <h3 class="heading-tertiary u-margin-bottom-small" id="text4">MOTIVATED TO PRODUCE RESULTS</h3>
+                    <p class="paragraph" id="text5">
+                        As a soon-to-be engineer and a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve
+                        products.
                     </p>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet</h3>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    <h3 class="heading-tertiary u-margin-bottom-small" id="text6">AN AGILE COLLABORATOR</h3>
+                    <p class="paragraph" id="text7">
+                        I have contributed to open source projects, worked on Artificial Intelligence technology, and always stay attuned to the
+                        newest frameworks.
                     </p>
 
                 </div>
@@ -79,13 +79,13 @@
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="feature-box__icon icon-basic-webpage"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Front End</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text8">Front End</h3>
                         <p class="feature-box__text">
                             <ul>
                                 <li>HTML5</li>
                                 <li>CSS3 | SASS</li>
                                 <li>JavaScript</li>
-                                <li>React | Redux</li>
+                                <li>React</li>
                             </ul>
                         </p>
                     </div>
@@ -93,7 +93,7 @@
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="feature-box__icon icon-basic-share"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Server</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text9">Server</h3>
                         <p class="feature-box__text">
                             <ul>
                                 <li>NodeJS</li>
@@ -107,7 +107,7 @@
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="feature-box__icon icon-basic-server2"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text10">Database</h3>
                         <p class="feature-box__text">
                             <ul>
                                 <li>PostgreSQL</li>
@@ -121,7 +121,7 @@
                 <div class="col-1-of-4">
                     <div class="feature-box">
                         <i class="feature-box__icon icon-basic-cloud"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Deployment</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text11">Deployment</h3>
                         <p class="feature-box__text">
                             <ul>
                                 <li>System Design</li>
@@ -137,7 +137,7 @@
 
         <section class="section-tours" id="projects">
             <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary" id="text12">
                     Project Portfolio
                 </h2>
             </div>
@@ -397,73 +397,6 @@
         </div>
     </footer>
 
-    <div class="popup" id="popup-2">
-        <div class="popup__content">
-            <div class="popup__right">
-                <a href="#section-tours" class="popup__close">&times;</a>
-                <h3 class="heading-secondary-sm popup__header-2">Instalava</h3>
-                <h3 class="heading-tertiary u-margin-bottom-small">React, Express, PostgreSQL</h3>
-                <div class="popup__text u-margin-bottom-medium">
-                    <p>
-                        Live feed, profile pages, followers.
-                    </p>
-                </div>
-                <a href="https://github.com/aj-4/lawa-ig" class="btn popup__btn-2">Source Code</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup-3">
-        <div class="popup__content">
-            <div class="popup__right">
-                <a href="#section-tours" class="popup__close">&times;</a>
-                <h3 class="heading-secondary-sm popup__header-3">Paywaal</h3>
-                <h3 class="heading-tertiary u-margin-bottom-small">React, Redux, Socket.io</h3>
-                <div class="popup__text u-margin-bottom-medium">
-                    <p>
-                        Chat, notifications, add friends. Live.
-                    </p>
-                </div>
-                <a href="https://github.com/aj-4/hrpaymo" class="btn popup__btn-3">Source Code</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup-4">
-        <div class="popup__content">
-            <div class="popup__left">
-                <a href="#projects"><img src="img/pp_demo.gif" alt="Perfect Plate Demo" class="popup__img"></a>
-            </div>
-            <div class="popup__right">
-                <a href="#section-tours" class="popup__close">&times;</a>
-                <h3 class="heading-secondary-sm popup__header-4">Perfect Plate</h3>
-                <h3 class="heading-tertiary u-margin-bottom-small">React, CSS, Express</h3>
-                <div class="popup__text u-margin-bottom-medium">
-                    <p>
-                        Instant nutrition info for any food. Create plates.
-                    </p>
-                </div>
-                <a href="https://github.com/aj-4/perfect-plate" class="btn popup__btn-4">Source Code</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup-5">
-        <div class="popup__content">
-            <div class="popup__right">
-                <a href="#section-tours" class="popup__close">&times;</a>
-                <h3 class="heading-secondary-sm popup__header-5">Elevator</h3>
-                <h3 class="heading-tertiary u-margin-bottom-small">React, Redux, Tokbox API</h3>
-                <div class="popup__text u-margin-bottom-medium">
-                    <p>
-                        Practice your pitch for your company or yourself. Live stream. Get immediate feedback. Watch yourself improve.
-                    </p>
-                </div>
-                <a href="https://github.com/aj-4/elevator" class="btn popup__btn-5">Source Code</a>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -481,18 +414,52 @@
 </script>
 
 <script>
-    var language;
-    function getLanguage() {
-        (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-        $.ajax({
-            url: '/language/' + localStorage.getItem('language') + '.json',
-            dataType: 'json', async: false, dataType: 'json',
-            success: function (lang) { language = lang }
-        });
+    function french(){
+        document.getElementById("text1").innerHTML = "Développeur Front-End"
+        document.getElementById("text2").innerHTML = "Voir les projets"
+        document.getElementById("text3").innerHTML = "Développeur Front-End basé à Bruxelles"
+        document.getElementById("text4").innerHTML = "MOTIVATED TO PRODUCE RESULTS"
+        document.getElementById("text5").innerHTML = "As a soon-to-be engineer and a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products."
+        document.getElementById("text6").innerHTML = "AN AGILE COLLABORATOR"
+        document.getElementById("text7").innerHTML = "I have contributed to open source projects, worked on Artificial Intelligence technology, and always stay attuned to the newest frameworks."
+        document.getElementById("text8").innerHTML = "FRONT-END"
+        document.getElementById("text9").innerHTML = "SERVEUR"
+        document.getElementById("text10").innerHTML = "BASE DE DONNEES"
+        document.getElementById("text11").innerHTML = "DEPLOYEMENT"
+        document.getElementById("text12").innerHTML = "PORTFOLIO DE PROJETS"
+        document.getElementById("text13").innerHTML = ""
+        document.getElementById("text14").innerHTML = ""
+        document.getElementById("text15").innerHTML = ""
+        document.getElementById("text16").innerHTML = ""
+        document.getElementById("text17").innerHTML = ""
+        document.getElementById("text18").innerHTML = ""
+        document.getElementById("text19").innerHTML = ""
+        document.getElementById("text20").innerHTML = ""
+        document.getElementById("text21").innerHTML = ""
     }
 
-    function setLanguage(lang) {
-        localStorage.setItem('language', lang);
+    function english() {
+        document.getElementById("text1").innerHTML = "FRONT-END DEVELOPER"
+        document.getElementById("text2").innerHTML = "SEE PROJECTS"
+        document.getElementById("text3").innerHTML = "FRONT-END DEVELOPER BASED OF BRUSSELS"
+        document.getElementById("text4").innerHTML = "MOTIVATED TO PRODUCE RESULTS"
+        document.getElementById("text5").innerHTML = "As a soon-to-be engineer and a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products."
+        document.getElementById("text6").innerHTML = "AN AGILE COLLABORATOR"
+        document.getElementById("text7").innerHTML = "I have contributed to open source projects, worked on Artificial Intelligence technology, and always stay attuned to the newest frameworks."
+        document.getElementById("text8").innerHTML = "FRONT-END"
+        document.getElementById("text9").innerHTML = "SERVER"
+        document.getElementById("text10").innerHTML = "DATABASE"
+        document.getElementById("text11").innerHTML = "DEPLOYMENT"
+        document.getElementById("text12").innerHTML = "PROJECT PORTFOLIO"
+        document.getElementById("text13").innerHTML = ""
+        document.getElementById("text14").innerHTML = ""
+        document.getElementById("text15").innerHTML = ""
+        document.getElementById("text16").innerHTML = ""
+        document.getElementById("text17").innerHTML = ""
+        document.getElementById("text18").innerHTML = ""
+        document.getElementById("text19").innerHTML = ""
+        document.getElementById("text20").innerHTML = ""
+        document.getElementById("text21").innerHTML = ""
     }
 </script>
 

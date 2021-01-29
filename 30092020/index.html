@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/logo-banner.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="icon" href="img/terminal-256.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <title>Lalami Mounir | Front-End Developer</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/logo-blanc-512.png" alt="" class="header__logo">
+        </div>
+        <div class="header__flag-uk">
+            <button type="button" onclick='english()' class="btn-flag">
+                <img src="img/flag-uk.png" alt="" class="header__flags">
+            </button>
+        </div>
+        <div class="header__flag-france">
+            <button type="button" onclick='french()' class="btn-flag">
+                <img src="img/flag-france.png" alt="" class="header__flags">
+            </button>
+        </div>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Lalami Mounir</span>
+                <span class="heading-primary--sub" id="text1">Front-End Developer</span>
+            </h1>
+
+            <a href="#projects" class="btn btn--white btn--animated smooth-goto" id="text2">See Projects</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary" id="text3">
+                    Front-End Developer based of Brussels
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small" id="text4">MOTIVATED TO PRODUCE RESULTS</h3>
+                    <p class="paragraph" id="text5">
+                        As a soon-to-be engineer and a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve
+                        products.
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small" id="text6">AN AGILE COLLABORATOR</h3>
+                    <p class="paragraph" id="text7">
+                        I have contributed to open source projects, worked on Artificial Intelligence technology, and always stay attuned to the
+                        newest frameworks.
+                    </p>
+
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/javascript.png" alt="JS" class="composition__photo composition__photo--p1">
+                        <img src="img/nodejs.png" alt="Node" class="composition__photo composition__photo--p3">
+                        <img src="img/react.png" alt="React" class="composition__photo composition__photo--p2">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-webpage"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text8">Front End</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3 | SASS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-share"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text9">Server</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>NodeJS</li>
+                                <li>Express</li>
+                                <li>C# | .NET</li>
+                                <li>Python</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-server2"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text10">Database</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>PostgreSQL</li>
+                                <li>mySQL</li>
+                                <li>MongoDB</li>
+                                <li>Cassandra</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-cloud"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small" id="text11">Deployment</h3>
+                        <p class="feature-box__text">
+                            <ul>
+                                <li>System Design</li>
+                                <li>AWS ECS | SQS</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours" id="projects">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary" id="text12">
+                    Project Portfolio
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-1">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+
+                                <span class="card__heading-span--1">
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>CSS3 | SASS</li>
+                                    <li>JavaScript</li>
+                                    <li>Python</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+
+                            <div class="card__cta">
+
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            Collection de jeux
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://llmounir.com/llmgames" class="btn btn--white btn--github">Go to Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-2">
+                            <div class="card__picture card__picture--6">
+                                &nbsp;
+                            </div>
+                            <img src="img/interogation-point.png" class="card__svg-icon spin" alt="">
+                            <div class="card__heading">
+                                <span class="card__heading-span--6">
+                                    COMING SOON
+                                </span>
+                            </div>
+                            <div class="card__details">
+                                <ul>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-6">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            COMING SOON
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/llmounir" class="btn btn--white btn--github">source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-3">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <img src="img/interogation-point.png" class="card__svg-icon spin" alt="">
+                            <div class="card__heading">
+                                <span class="card__heading-span--3">
+                                    COMING SOON
+                                </span>
+                            </div>
+                            <div class="card__details">
+                                <ul>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            COMING SOON
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/llmounir" class="btn btn--white btn--github">source code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--second row-->
+                <div class="row">
+                    <div class="col-1-of-3 single-col">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-4">
+                                <div class="card__picture card__picture--4">
+                                    &nbsp;
+                                </div>
+                                <img src="img/interogation-point.png" class="card__svg-icon card__svg-icon-4 floating" alt="">
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span--4">
+                                        COMING SOON
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>???</li>
+                                        <li>???</li>
+                                        <li>???</li>
+                                        <li>???</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-4">
+                                <div class="card__cta">
+                                    <div class="card__box">
+                                        <div class="card__description">
+                                            <p>
+                                                COMING SOON
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/llmounir" class="btn btn--white btn--github">source code</a>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-2">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <img src="img/interogation-point.png" class="card__svg-icon card__svg-icon-4 floating" alt="">
+                            <div class="card__heading">
+                                <span class="card__heading-span--2">
+                                    COMING SOON
+                                </span>
+                            </div>
+                            <div class="card__details">
+                                <ul>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            COMING SOON
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/llmounir" class="btn btn--white btn--github">source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 single-col">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-5">
+                            <div class="card__picture card__picture--5">
+                                &nbsp;
+                            </div>
+                            <img src="img/interogation-point.png" class="card__svg-icon card__svg-icon-4 floating" alt="">
+                            <h5 class="card__heading">
+                                <span class="card__heading-span--5">
+                                    COMING SOON
+                                </span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                    <li>???</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-5">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            COMING SOON
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/llmounir" class="btn btn--white btn--github">source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <a href="#top">
+                <img src="img/logo-blanc-512.png" alt="Logo" class="footer__logo smooth-goto">
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://github.com/llmounir/" class="footer__link">GitHub</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">LinkedIn</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Site by
+                    <a href=# class="footer__link"> Lalami Mounir </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $('.smooth-goto').on('click', function () {
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top + 50
+            }, 1000);
+        });
+
+    $(document).ready(function(){
+        $('.popup__img').css('visibility', 'visible');        
+    })
+</script>
+
+<script>
+    function french(){
+        document.getElementById("text1").innerHTML = "Développeur Front-End"
+        document.getElementById("text2").innerHTML = "Voir les projets"
+        document.getElementById("text3").innerHTML = "Développeur Front-End basé à Bruxelles"
+        document.getElementById("text4").innerHTML = "MOTIVATED TO PRODUCE RESULTS"
+        document.getElementById("text5").innerHTML = "As a soon-to-be engineer and a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products."
+        document.getElementById("text6").innerHTML = "AN AGILE COLLABORATOR"
+        document.getElementById("text7").innerHTML = "I have contributed to open source projects, worked on Artificial Intelligence technology, and always stay attuned to the newest frameworks."
+        document.getElementById("text8").innerHTML = "FRONT-END"
+        document.getElementById("text9").innerHTML = "SERVEUR"
+        document.getElementById("text10").innerHTML = "BASE DE DONNEES"
+        document.getElementById("text11").innerHTML = "DEPLOYEMENT"
+        document.getElementById("text12").innerHTML = "PORTFOLIO DE PROJETS"
+        document.getElementById("text13").innerHTML = ""
+        document.getElementById("text14").innerHTML = ""
+        document.getElementById("text15").innerHTML = ""
+        document.getElementById("text16").innerHTML = ""
+        document.getElementById("text17").innerHTML = ""
+        document.getElementById("text18").innerHTML = ""
+        document.getElementById("text19").innerHTML = ""
+        document.getElementById("text20").innerHTML = ""
+        document.getElementById("text21").innerHTML = ""
+    }
+
+    function english() {
+        document.getElementById("text1").innerHTML = "FRONT-END DEVELOPER"
+        document.getElementById("text2").innerHTML = "SEE PROJECTS"
+        document.getElementById("text3").innerHTML = "FRONT-END DEVELOPER BASED OF BRUSSELS"
+        document.getElementById("text4").innerHTML = "MOTIVATED TO PRODUCE RESULTS"
+        document.getElementById("text5").innerHTML = "As a soon-to-be engineer and a tenacious self-taught programmer, I use continuous iteration to produce results quickly and continuously improve products."
+        document.getElementById("text6").innerHTML = "AN AGILE COLLABORATOR"
+        document.getElementById("text7").innerHTML = "I have contributed to open source projects, worked on Artificial Intelligence technology, and always stay attuned to the newest frameworks."
+        document.getElementById("text8").innerHTML = "FRONT-END"
+        document.getElementById("text9").innerHTML = "SERVER"
+        document.getElementById("text10").innerHTML = "DATABASE"
+        document.getElementById("text11").innerHTML = "DEPLOYMENT"
+        document.getElementById("text12").innerHTML = "PROJECT PORTFOLIO"
+        document.getElementById("text13").innerHTML = ""
+        document.getElementById("text14").innerHTML = ""
+        document.getElementById("text15").innerHTML = ""
+        document.getElementById("text16").innerHTML = ""
+        document.getElementById("text17").innerHTML = ""
+        document.getElementById("text18").innerHTML = ""
+        document.getElementById("text19").innerHTML = ""
+        document.getElementById("text20").innerHTML = ""
+        document.getElementById("text21").innerHTML = ""
+    }
+</script>
+
+</html>
